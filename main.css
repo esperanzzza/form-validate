@@ -1,0 +1,255 @@
+
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+}
+
+.modal-content-login {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  width: 300px;
+  padding: 45px 80px;
+  color: #000000;
+  background: #f8f3f0;
+  box-shadow: 0 30px 50px rgba(0, 1, 1, 0.7);
+}
+
+.modal-content-login h2 {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.modal-content-login p {
+  margin: 0;
+  margin-bottom: 9px;
+}
+.modal-content-login .login-form {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.login-form input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 7px 15px;
+  padding-right: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  outline: none;
+}
+.login-form input:focus,
+.login-form textarea:focus {
+  border-color: #663d15;
+}
+.login-form input::-webkit-input-placeholder {
+  text-indent: 0px;   
+  transition: text-indent 0.5s ease;
+  color: #000;
+  opacity: 1;
+  font-weight: 700;
+}
+.login-form input::-moz-placeholder {
+  text-indent: 0px;   
+  transition: text-indent 0.5s ease;
+  color: #000;
+  opacity: 1;
+  font-weight: 700;
+}
+.login-form input:-moz-placeholder {
+  text-indent: 0px;   
+  transition: text-indent 0.5s ease;
+  color: #000;
+  opacity: 1;
+  font-weight: 700;
+}
+.login-form input:-ms-input-placeholder {
+  text-indent: 0px;   
+  transition: text-indent 0.5s ease;
+  color: #000;
+  opacity: 1;
+  font-weight: 700;
+}
+
+textarea::-webkit-input-placeholder {
+  opacity: 1; 
+  transition: opacity 0.3s ease;
+  color: #000;
+  font-weight: 700;
+}
+
+textarea::-moz-placeholder {
+  opacity: 1; 
+  transition: opacity 0.3s ease;
+  color: #000;
+  font-weight: 700;
+}
+textarea:-moz-placeholder {
+  opacity: 1; 
+  transition: opacity 0.3s ease;
+  color: #000;
+  font-weight: 700;
+}
+textarea:-ms-input-placeholder {
+  opacity: 1; 
+  transition: opacity 0.3s ease;
+  color: #000;
+  font-weight: 700;
+}
+
+
+.login-form input:focus::-webkit-input-placeholder {
+  text-indent: 500px; 
+  transition: text-indent 0.5s ease;
+}
+
+.login-form input:focus::-moz-input-placeholder {
+  text-indent: 500px; 
+  transition: text-indent 0.5s ease;
+}
+.login-form input:focus: -moz-input-placeholder {
+  text-indent: 500px; 
+  transition: text-indent 0.5s ease;
+}
+.login-form input:focus: ms-input-placeholder {
+  text-indent: 500px; 
+  transition: text-indent 0.5s ease;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+}
+
+textarea:focus::-moz-input-placeholder {
+   opacity: 0; 
+  transition: opacity 0.3s ease;
+}
+textarea:focus: -moz-input-placeholder {
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+}
+textarea:focus: ms-input-placeholder {
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+}
+
+.remember[type='checkbox']+label span {
+  margin-right: 15px;
+}
+.remember[type='checkbox']+label {
+  float: left;
+  width: 140px;
+  margin-top: 7px;
+}
+.login-form .restore {
+  float: right;
+  color: #000000;
+  margin-top: 3px;
+}
+.login-form .restore:hover {
+  color: #663d15;
+}
+fieldset {
+  border: none;
+  outline: none;
+}
+
+fieldset:first-of-type {
+  position: relative;
+}
+
+fieldset:first-of-type:after {
+  position: absolute;
+  content: '';
+  background: #663d15;
+  height: 3px;
+  width: 90%;
+  left: 5%;
+  right: 0;
+  bottom: 0;
+}
+
+.btn {
+  transform: translateX(100%);
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 33px;
+  color: #fff;
+  background: #000;
+  font-size: 14px;
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 16px;
+  margin-top: 9px;
+}
+.btn:hover, .btn:active {
+  background: #663d15;
+}
+.btn:disabled {
+  cursor: default;
+  opacity: .5;
+}
+.btn:disabled:hover {
+  background: #000;
+}
+
+input.date[type="date"]::-webkit-datetime-edit-month-field {
+  color: #000;
+  font-weight: 700;
+}
+
+.error-message {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  transform: translateY(-10px);
+  text-align: center;
+  background: #663d15;
+  color: #ffffff;
+}
+.error-message:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  border-style: solid;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  left: calc(50% - 10px);
+  bottom: 0;
+  border-width: 10px 10px 0 10px;
+  border-color: #663d15 transparent transparent transparent;
+}
+.error-message:hover:before, .error-message:focus:before, .error-message:active:before {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
