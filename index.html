@@ -12,18 +12,17 @@
     <h2 class="modal-content-title">Personal info</h2>
       <form class="login-form js-validate-form" action="/echo" method="post" >
       <fieldset>
-
       <label for="first-name"></label>
-      <input class="name" type="text" name="first-name"  id="first-name" placeholder="First Name" data-validme="name" required value="Yu">
-      <input class="name" type="text" name="first-name"  id="first-name" placeholder="First Name" data-validme="name" required value="Yurr1">
-      <!-- <label for="last-name"></label>
-      <input class="name" type="text" name="lastName" id="last-name" placeholder="Last Name" required>
+      <input class="name" type="text" name="first-name"  id="first-name" placeholder="First Name" data-validme="name" required value="">
+      <label for="last-name"></label>
+      <input class="name" type="text" name="last-name"  id="last-name" placeholder="Last Name" data-validme="name" required value="">
       <label for="password"></label>
-      <input class="password" type="password" name="password" id="password" placeholder="Password" required>
+      <input class="password" type="password" name="password" id="password" placeholder="Password" data-validme="password" required value="">
       <label for="email"></label>
-      <input class="email" type="email" name="email" id="email" placeholder="Email" required>
+      <input class="email" type="email" name="email" id="email" placeholder="Email" data-validme="email" required value="">
       <p class="confirm">Confirm email</p>
-      <input class="email" type="email" name="email" placeholder="Email" required>
+      <label for="confirm-email"></label>
+      <input class="email" type="email" name="confirm-email" id="confirm-email" placeholder="Confirm email" data-validme="confirm-email" required value="">
       <label for="age"></label>
       <input class="age" type="number" name="age" id="age" placeholder="Age" required>
       <textarea class="bio" name="bio" placeholder="Bio"></textarea>
@@ -32,7 +31,7 @@
       <p>Payment information</p>
       <input class="credit-card" type="number" name="credit-card" placeholder="Credit Card" required>
       <input class="cvv" type="number" name="cvv" placeholder="CVV" required>
-      <input class="date" type="date" name="date" placeholder="Valid until" required> -->
+      <input class="date" type="date" name="date" placeholder="Valid until" required> 
       <button class="btn" type="submit">OK</button>
        </fieldset>
     </form>
